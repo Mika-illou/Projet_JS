@@ -1,0 +1,61 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #31a857;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: min(880px, 96%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card {
+  border: 2px solid #000;
+  border-radius: 12px;
+  box-shadow: 5px 6px 0 rgba(0, 0, 0, 0.55);
+}
+
+#display {
+  background: #eee;
+  min-height: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.controls {
+  background: #6cd48a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 16px;
+  padding: 20px;
+}
+
+label {
+  font-size: 1.4rem;
+  font-variant: small-caps;
+}
+
+select, button {
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border: 1px solid #767676;
+  border-radius: 2px;
+}
+
+select { background: #fff; width: 200px; }
+button { background: #efefef; cursor: pointer; }
+button:hover { background: #ddd; }
+
+.hidden { display: none; }
+#weather-content h2 { margin: 0; font-size: 2rem; }
+.temp { font-size: 2.6rem; font-weight: bold; margin: 4px 0; }
+ul { list-style: none; padding: 0; margin: 8px 0 0; font-size: 1.1rem; line-height: 1.7; }

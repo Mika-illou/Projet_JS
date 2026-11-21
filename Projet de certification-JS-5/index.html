@@ -1,0 +1,46 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Météo en direct</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+<body>
+
+    <main>
+      <section id="display" class="card">
+        <div id="weather-content" class="hidden">
+          <h2 id="location">N/A</h2>
+          <img id="weather-icon" alt="Icône météo" />
+          <p id="weather-main">N/A</p>
+          <p class="temp" id="main-temperature">N/A</p>
+          <ul>
+            <li>Ressenti : <span id="feels-like">N/A</span></li>
+            <li>Humidité : <span id="humidity">N/A</span></li>
+            <li>Vent : <span id="wind">N/A</span></li>
+            <li>Rafales : <span id="wind-gust">N/A</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card controls">
+        <label for="city-select">Weather for:</label>
+        <select id="city-select">
+          <option value=""></option>
+          <option value="new york">New York</option>
+          <option value="los angeles">Los Angeles</option>
+          <option value="chicago">Chicago</option>
+          <option value="paris">Paris</option>
+          <option value="tokyo">Tokyo</option>
+          <option value="london">London</option>
+        </select>
+        <button id="get-weather-btn" type="button">Get Weather</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
